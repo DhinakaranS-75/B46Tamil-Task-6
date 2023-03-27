@@ -1,0 +1,21 @@
+4).write a class to calculate the uber price.
+
+
+class UberPrice {
+  private baseFare: number;
+  private costPerMinute: number;
+  private costPerMile: number;
+
+  constructor(baseFare: number, costPerMinute: number, costPerMile: number) {
+    this.baseFare = baseFare;
+    this.costPerMinute = costPerMinute;
+    this.costPerMile = costPerMile;
+  }
+
+  calculatePrice(distance: number, time: number): number {
+    const distanceCost = distance * this.costPerMile;
+    const timeCost = time * this.costPerMinute;
+    const totalCost = this.baseFare + distanceCost + timeCost;
+    return totalCost;
+  }
+}

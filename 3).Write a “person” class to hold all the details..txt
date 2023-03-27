@@ -1,0 +1,61 @@
+3).Write a “person” class to hold all the details.
+
+Ans:
+
+
+
+class Person {
+  private name: string;
+  private age: number;
+  private gender: string;
+  private email: string;
+  private phone: string;
+
+  constructor(name: string, age: number, gender: string, email: string, phone: string) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+    this.email = email;
+    this.phone = phone;
+  }
+
+  getName(): string {
+    return this.name;
+  }
+
+  setName(name: string): void {
+    this.name = name;
+  }
+
+  getAge(): number {
+    return this.age;
+  }
+
+  setAge(age: number): void {
+    this.age = age;
+  }
+
+  getGender(): string {
+    return this.gender;
+  }
+
+  setGender(gender: string): void {
+    this.gender = gender;
+  }
+
+  getEmail(): string {
+    return this.email;
+  }
+
+  setEmail(email: string): void {
+    this.email = email;
+  }
+
+  getPhone(): string {
+    return this.phone;
+  }
+
+  setPhone(phone: string): void {
+    this.phone = phone;
+  }
+}
